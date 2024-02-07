@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Quadratic Calculator</title>
+		<link rel="stylesheet" href="css/w3.css">
+		<script type="text/javascript" src="jScripts/Quadratic.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<body class="w3-margin">
+		<header class="w3-row w3-dark-grey w3-center">
+			<h1>Quadratic Calculator</h1>
+		</header>
+			<div class="w3-center w3-mobile">
+				<div class="w3-row w3-margin">
+					<div class="w3-half w3-container w3-border w3-round-xlarge">
+						<h2><input type="text" id="a" style="width:60px"> x<sup>2</sup> + <input type="text" id="b" style="width:60px"> x + <input type="text" id="c" style="width:60px"> = 0</h2>
+						<div class="w3-panel  w3-leftbar w3-border-black w3-light-gray">
+						<p>ax<sup>2</sup> + bx + c = 0</p>
+						<p>a , b and c are real numbers and a ≠ 0</p>
+						</div>
+						
+						<h3 id="result"></h3>
+						<div class="w3-row">
+						<h4 class="w3-half w3-center w3-panel w3-border " id="root1">x 1</h4>
+						<h4 class="w3-half w3-center w3-panel w3-border " id="root2">x 2</h4>
+						</div>
+						<button id="calculate" class="w3-blue-gray w3-button w3-margin">calculate</button>
+						<button id="reset" class="w3-blue-gray w3-button w3-margin">reset</button>
+					</div>
+
+					<div class="w3-half w3-container ">
+						<h2 class="w3-grey">Graph</h2>
+						
+						<canvas id="graph"></canvas>
+					</div>
+				</div>
+
+				<div class="w3-light-gray">
+					<h2>History</h2>
+					<table class="w3-table w3-bordered" id="table">
+						<tr>
+							<th>Question</th>
+							<th>x 1</th>
+							<th>x 2</th>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+			
+	</body>
+</html>
+
+
+	  
